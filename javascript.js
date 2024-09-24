@@ -12,7 +12,7 @@ document.getElementById('mc').addEventListener('click', function() {
 
     
     if (document.body.classList.contains('dark-mode')) {
-        button.textContent = 'Light Mode';
+        button.textContent = 'Dark Mode';
     } else {
         button.textContent = 'Dark Mode';
     }
