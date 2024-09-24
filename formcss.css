@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Comic Neue", cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: small;
+}
+
+label{
+    color: #9da69f;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #383b39;
+    height: 90vh;
+    margin-top: 80px;
+    width: 80%;
+    border-radius: 50px;
+    background-color: #c5cdc7;
+    margin-left: 160px;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cont>p{
+    color: #565d56;
+    font-size: medium;
+}
+.cont p>a{
+    color: #565d56;
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    font-size: 1.5rem;
+    background-color:#383b39;
+    color: #f0f4f1;
+    padding: 20px;
+    position: fixed;
+    width: 85%;
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#flex{
+    position: relative;
+   left: 200px;
+gap:20px 
+}
+h3,p,li,ul{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    color: white;
+}
+.main{
+    position: relative;
+    top: 50px;
+    height: 80vh;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+}
+.bottom{
+    margin-top: 50px;
+}
+
+.right {
+    width: 100%;
+    max-width: 500px; 
+    margin: 20px; 
+    background: white;
+    color: red;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3.4rem;
+}
+.bot-li li >a{
+    height: 80px;
+    width: 80px;
+    color: #565d56;
+    
+    
+}
+.bot-li li >a:hover{
+    
+    color:#565d56;
+    font-size: larger;
+    
+
+}
+#flex li >a{
+    text-decoration: none;
+    color:#f0f4f1; ;
+    font-size: 1.4rem;
+}
+#flex li >a:hover{
+    text-decoration: none;
+    color:#565d56;
+    font-size: 1.4rem;
+}
+h3, p, li, ul {
+    list-style: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.7rem;
+}
+h3{
+    position: relative;
+    right: 220px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    color: blue;
+    border: solid 1px rgb(117, 117, 198);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: transparent;
+    outline: none;
+    padding: 10px; 
+}
+
+button {
+    background-color: #565d56;
+    color: #f0f4f1;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:#9da69f;
+    color: #565d56;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        width: 95vw;
+        margin-top: 100px;
+        height: auto; /* Allow height to adjust */
+    }
+    #flex li >a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+    }
+    .top >h3{
+        display: none;
+    }
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .bot-li li >a{
+        margin-left: 50px;
+    }
+    .cont >p{
+        margin-left: 50px;
+    }
+    .cont p>a{
+        margin-left: 70px;
+    }
+    .left {
+        margin-left: 10px; /* Center left section */
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .right {
+        width: 90%; /* Make right section more flexible */
+        margin: auto; /* Center right section */
+    }
+    input, textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+    .right{
+        position: relative;
+        width: 300px;
+        top: -50px;
+    }
+}
