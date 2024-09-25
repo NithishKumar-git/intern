@@ -40,7 +40,7 @@ label{
 }
 #mc{
 
-
+    color: #f0f4f1;
 }
 button{
     margin-left: 25px;
@@ -113,6 +113,7 @@ h1 {
     height: 80px;
     width: 80px;
     color: #565d56;
+    transition: transform .5s ease-in-out ;
     
     
 }
@@ -120,16 +121,13 @@ h1 {
     
     color:#565d56;
     font-size: larger;
+    transform: scale(1.5s) rotate(360deg);
     
 
 }
-#mc{
-    color:#f0f4f1;
-    
-}
 #flex li >a{
     text-decoration: none;
-    color:#f0f4f1; ;
+    color:#f0f4f1; 
     font-size: 1.4rem;
 }
 #flex li >a:hover{
@@ -163,7 +161,6 @@ input, textarea {
     background: transparent;
     outline: none;
     padding: 10px; 
-    resize: none;
 }
 
 .btn {
@@ -189,13 +186,45 @@ button:hover {
         flex-direction: column;
         width: 95vw;
         margin-top: 100px;
-        height: auto; /* Allow height to adjust */
+        height: auto;
+        position: relative;
+        margin-top:15px ;
     }
-    #flex li >a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.4rem;
+        
+    .top{
+        width: 80vw;
+        position: relative;
+        left: 30px;
+        padding-bottom: 30px;
+        margin-left: 0px;
+        
+    
+        
     }
+    #mc{
+position: relative;
+left: 80px;
+    }
+    .top>ul{
+    position: relative;
+    right: 10px;
+    margin-left: 0px;
+    font-size: 10px;
+    }
+    
+    .top >h3{
+        display: none;
+    }
+    #flex{
+        left: 0px;
+        position: relative;
+        
+    }
+    
+    .top >h3{
+        display: none;
+    }
+    
     .top >h3{
         display: none;
     }
@@ -229,5 +258,9 @@ button:hover {
         position: relative;
         width: 300px;
         top: -50px;
+    }
+    .main{
+        position: relative;
+        right: 150px;
     }
 }

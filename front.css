@@ -114,8 +114,8 @@ padding: 0;
         
     }
     .image:hover{
-        transform: scale(1.1);
-        rotate: 7deg;
+        
+        
         cursor: pointer;
     }
     .wrap{
@@ -147,7 +147,7 @@ padding: 0;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        
       }
       
       
@@ -214,17 +214,36 @@ background-color: white;
     .wrap{
         flex-direction: column-reverse;
     }
+    .wrap{
+        position: relative;
+        right: 90px;
+        top: 20px;
+        
+        
+    }
     .right .image >img{
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
         border-radius: 50px;
         position: relative;
-        top: 130px;
-        /* transform: rotate(-7deg); */
-        left: -50px;
+        bottom: 50px;
+        left: -10px;
+
     }
+
     .top{
-        width: 100vw;
+        width: 80vw;
+        position: relative;
+        right: 50px;
+        font-size: 20px;
+    
+        
+    }
+    .top>ul{
+    position: relative;
+    right: 10px;
+    margin-left: 0px;
+    font-size: 13px;
     }
     
     .top >h3{
