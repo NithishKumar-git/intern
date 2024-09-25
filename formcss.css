@@ -7,6 +7,9 @@ body {
     background-color: white;
     font-size: small;
 }
+body.dark-mode {
+    background-color: #1a1a1a; /* Dark mode background */
+}
 
 label{
     color: #9da69f;
@@ -35,6 +38,19 @@ label{
 .cont p>a{
     color: #565d56;
 }
+#mc{
+
+
+}
+button{
+    margin-left: 25px;
+    padding: 15px;
+    background-color: #383b39;
+    color: black;
+    border-radius: 20px;
+    
+    
+}
 .top {
     display: flex;
     justify-content: space-around;
@@ -53,7 +69,7 @@ label{
 
 #flex{
     position: relative;
-   left: 200px;
+   left: 400px;
 gap:20px 
 }
 h3,p,li,ul{
@@ -107,6 +123,10 @@ h1 {
     
 
 }
+#mc{
+    color:#f0f4f1;
+    
+}
 #flex li >a{
     text-decoration: none;
     color:#f0f4f1; ;
@@ -143,9 +163,10 @@ input, textarea {
     background: transparent;
     outline: none;
     padding: 10px; 
+    resize: none;
 }
 
-button {
+.btn {
     background-color: #565d56;
     color: #f0f4f1;
     font-size: 20px;

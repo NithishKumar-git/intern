@@ -6,6 +6,7 @@ body{
     align-items: center;
     justify-content: center;
     
+    
     }
     .top{
         background-color:#383b39;
@@ -19,16 +20,8 @@ body{
         margin-left: 100px;
         margin-top: 20px;
     }
-    .name{
-        color: transparent;
-        position: relative;
-        bottom: 50px;
-    }
-     .name > span{
-        background: linear-gradient(120deg,red,30%,yellow);
-        --webkit-backgroundclip:text;
-        background-clip:text;
-    }
+
+
     html{
         scroll-behavior: smooth ;
     }
@@ -77,11 +70,7 @@ padding: 0;
         width: 50%;
         position: relative
     }
-    .wel{
-        padding: 20px;
-        padding-right: 25px;
-        color: black;
-    }
+    
     h1{
         padding: 20px;
         padding-right: 25px;
@@ -119,7 +108,10 @@ padding: 0;
     }
     #mc{
 
-        background-color: #c5cdc7;
+        
+        color:#f0f4f1;
+        background: none;
+        
     }
     .image:hover{
         transform: scale(1.1);
@@ -137,6 +129,7 @@ padding: 0;
         border-radius: 50px;
         margin-left: 105px;
         box-shadow: 0px 0px 20px #565d56;
+                background:linear-gradient(#f0f4f1,#c5cdc7,#f0f4f1);
     }
     img{
         height: 350px;
@@ -164,14 +157,8 @@ padding: 0;
     }
     .main{
         background:linear-gradient(#f0f4f1,#c5cdc7,#f0f4f1);
+    
         height: 100vh;
-    }
-    .bottom{
-        color: rgb(241, 124, 124);
-        display: inline-block;
-        position: relative;
-       left: 30% 
-     
     }
     .bot-li{
         margin-left: 0px;
@@ -189,32 +176,39 @@ padding: 0;
         color: #565d56;
     }
     
-    /* DARK AND LIGHT MODE */
-    
-    .main.dark-mode .wrap {
-        background-color: #383b39;
-    }
-    
-    .main.dark-mode h1 {
-        color: #c5cdc7;
-    }
-    
-    .main.dark-mode button {
-        background-color: #c5cdc7;
-        color: #383b39;
-    }
+   
+ 
+body.dark-mode {
+    background: #2e2e2e; 
+    color: #f0f4f1; 
+}
+.main.dark-mode {
+    background:linear-gradient(black,black);
     
     
-    
-    .main.dark-mode h2 {
-        color:#c5cdc7;
-    }
+}
+.left.dark-mode{
+background-color: white;
+}
 
+.nk.dark-mode {
+    color: #c5cdc7;
     
-    .main.dark-mode .bot-lis:hover {
-        color: #f0f4f1;
-    }
+}
+.li.top.dark-mode{
+    color: black;
+}
+.wrap.top.dark-mode{
+    box-shadow: #c5cdc7;
+    background:linear-gradient(#4f4f4f,#383b39,#4f4f4f);
     
+}
+
+.button.dark-mode {
+    background-color: #4f4f4f; /* Dark button */
+    color: #f0f4f1; /* Light text on buttons */
+}
+
     
 @media (max-width:480px){
     .wrap{

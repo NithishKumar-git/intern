@@ -1,19 +1,14 @@
+// Add this to your javascript.js
 document.getElementById('mc').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
-    const main = document.querySelector('.main');
-    const top = document.querySelector('.top');
-    const button = document.getElementById('mc');
+    const topNav = document.querySelector('.top');
+    topNav.classList.toggle('dark-mode');
     
+    const mainSection = document.querySelector('.main');
+    mainSection.classList.toggle('dark-mode'); // Toggle dark mode for main
 
-    main.classList.toggle('dark-mode');
-    top.classList.toggle('dark-mode');
-    button.classList.toggle('dark-mode');
-    
-
-    
-    if (document.body.classList.contains('dark-mode')) {
-        button.textContent = 'Dark Mode';
-    } else {
-        button.textContent = 'Dark Mode';
-    }
+    const buttons = document.querySelectorAll('.btnn, #mc,.nk');
+    buttons.forEach(button => {
+        button.classList.toggle('dark-mode');
+    });
 });

@@ -32,5 +32,5 @@ To move a Folder from your desktop to git
     git push -u origin main/master
 
 To sync your desktop and github 
-    git pull
+    git pull     ....
     
