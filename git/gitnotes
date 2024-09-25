@@ -1,0 +1,36 @@
+Git 
+    git is a version control system
+    git helps you keep track of code changes.
+    git is used to colobrate on code.
+    git is a web based repositry hosting service
+
+How to Create a new repositry in the Git 
+    click + icon on the top right corner
+    click repositry
+    name the repositry
+    press Create repositry
+
+Creating a file on Git Hub
+    click create new file
+    name the file 
+    press commit changes
+    give a commit message
+
+Download Git bash on chrome
+
+To check and add git in your own desktop
+    open cmd and type git 
+    to add user name and email by using the command [git config --global user.name"your name "] for user name and type [git config --global user.email"your email"]
+    open vs code 
+    open terminal
+    commands [ git clone your repo link]
+
+To move a Folder from your desktop to git 
+    git init
+    git add . 
+    git commit -m "commit message"
+    git push -u origin main/master
+
+To sync your desktop and github 
+    git pull
+    
