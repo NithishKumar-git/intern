@@ -180,8 +180,10 @@ input, textarea {
     border-top: none;
     background: transparent;
     outline: none;
-    padding: 10px; 
+    padding: 10px;
+    resize: none; 
 }
+
 
 .btn {
     background-color: #565d56;

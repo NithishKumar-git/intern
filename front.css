@@ -6,6 +6,8 @@ body{
     align-items: center;
     justify-content: center;
     
+  
+    
     }
     .top{
         background-color: #383b39;
@@ -132,7 +134,7 @@ padding: 0;
         align-items: center;
         justify-content: space-around;
         position: relative;
-        top: 200px;
+        top: 100px;
         padding: 30px;
         width: 82%; 
         border-radius: 50px;
@@ -165,7 +167,7 @@ padding: 0;
     }
     .main{
         background:linear-gradient(#f0f4f1,#c5cdc7,#f0f4f1);
-        height: 110vh;
+        height: 100vh;
     }
     .bottom{
        
@@ -245,6 +247,12 @@ padding: 0;
         color: #565d56;
 
     }
+    footer{
+        color: #383b39;
+        position: relative;
+        bottom: 30px;
+    }
+ 
     
 @media (max-width:480px){
     .wrap{
@@ -299,7 +307,7 @@ padding: 0;
     .top{
         width: 80vw;
         position: relative;
-        right: 50px;
+        right: 20px;
         font-size: 20px;
     
         
