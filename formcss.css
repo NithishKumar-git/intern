@@ -10,6 +10,26 @@ body {
 body.dark-mode {
     background-color: #1a1a1a; /* Dark mode background */
 }
+.dark-mode .top{
+    background-color: white;
+  
+}
+.dark-mode #flex>.li>a {
+    color: black;
+}
+.dark-mode #flex>.li>a :hover{
+    color: #565d56;
+}
+.dark-mode #yc{
+    color: black;
+}
+.dark-mode #flex>.li>a :hover{
+    color: #565d56;
+
+}
+.dark-mode #yc:hover{
+    color: #565d56;
+}
 
 label{
     color: #9da69f;
@@ -59,7 +79,7 @@ button{
     font-size: 1.5rem;
     background-color:#383b39;
     color: #f0f4f1;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
     width: 85%;
     border-radius: 50px;

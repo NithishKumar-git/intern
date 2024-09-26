@@ -6,10 +6,9 @@ body{
     align-items: center;
     justify-content: center;
     
-    
     }
     .top{
-        background-color:#383b39;
+        background-color: #383b39;
         font-size: 1.5rem;
         padding: 10px;
         position: fixed;
@@ -17,11 +16,22 @@ body{
         width:90vw;
         z-index: 99;
         border-radius: 50px;
-        margin-left: 100px;
+        margin-left: 70px;
         margin-top: 20px;
     }
-
-
+    .top >h3{
+        color: #f0f4f1;
+    }
+    .name{
+        color: transparent;
+        position: relative;
+        bottom: 50px;
+    }
+     .name > span{
+        background: linear-gradient(120deg,red,30%,yellow);
+        --webkit-backgroundclip:text;
+        background-clip:text;
+    }
     html{
         scroll-behavior: smooth ;
     }
@@ -70,7 +80,11 @@ padding: 0;
         width: 50%;
         position: relative
     }
-    
+    .wel{
+        padding: 20px;
+        padding-right: 25px;
+        color: black;
+    }
     h1{
         padding: 20px;
         padding-right: 25px;
@@ -106,18 +120,13 @@ padding: 0;
         
         
     }
-    #mc{
+    #mc:hover{
+        color: #565d56;
 
         
-        color:#f0f4f1;
-        background: none;
-        
     }
-    .image:hover{
-        
-        
-        cursor: pointer;
-    }
+   
+    
     .wrap{
         display: flex;
         align-items: center;
@@ -129,7 +138,6 @@ padding: 0;
         border-radius: 50px;
         margin-left: 105px;
         box-shadow: 0px 0px 20px #565d56;
-                background:linear-gradient(#f0f4f1,#c5cdc7,#f0f4f1);
     }
     img{
         height: 350px;
@@ -147,7 +155,7 @@ padding: 0;
         position: absolute;
         top: 50%;
         left: 50%;
-        
+        transform: translate(-50%, -50%);
       }
       
       
@@ -157,8 +165,14 @@ padding: 0;
     }
     .main{
         background:linear-gradient(#f0f4f1,#c5cdc7,#f0f4f1);
-    
-        height: 100vh;
+        height: 110vh;
+    }
+    .bottom{
+       
+        display: inline-block;
+        position: relative;
+       left: 30% 
+     
     }
     .bot-li{
         margin-left: 0px;
@@ -172,42 +186,93 @@ padding: 0;
         color: #f0f4f1;
     
     }
+    .bot-lis{
+        color: #565d56;
+    }
     a:hover{
         color: #565d56;
     }
+
+    /* DARK AND LIGHT MODE */
+.main.dark-mode .wrap{
+    background-color: #383b39;
+    }
+    .main.dark-mode{
+        background: linear-gradient(black,black);
+    }
+    .main.dark-mode .top ul li >a{
+        color: black;
+
+    }
+    .main.dark-mode .top ul li >a:hover{
+        color: #565d56;
+
+    }
+    .main.dark-mode .top >h3{
+        color: black;
+
+    }
+    .main.dark-mode .top{
+        background-color: white;
+
+    }
+    .main.dark-mode .a{
+        color:  black;
+    }
+    .main.dark-mode h1{
+        color: #f0f4f1;
+    }
+    .main.dark-mode button {
+    background-color:#c5cdc7;
+    color: #383b39;
+    }
+    .main.dark-mode,.li-res,.h3-res,.wel{
+      color: #383b39;
+    }
+    .main.main.dark-mode h2{
+        color: white;
+    }
+    .main.dark-mode .bot-cen{
+        background:none;
+    }
+    .main.dark-mode .bot-lis{
+        color: white;
+    }
+    .main.dark-mode #mc{
+        color: black;
+    }
+    .main.main.dark-mode #mc:hover{
+        color: #565d56;
+
+    }
     
+@media (max-width:480px){
+    .wrap{
+        flex-direction: column-reverse;
+    }
+    .right .image >img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+        position: relative;
+        top: 130px;
+        /* transform: rotate(-7deg); */
+        left: -50px;
+    }
+    .top{
+        width: 100vw;
+    }
+    
+    .top >h3{
+        display: none;
+    }
+
+    .left{
+        width: 100%;
+        position: relative;
+    }
+}
    
- 
-body.dark-mode {
-    background: #2e2e2e; 
-    color: #f0f4f1; 
-}
-.main.dark-mode {
-    background:linear-gradient(black,black);
-    
-    
-}
-.left.dark-mode{
-background-color: white;
-}
-
-.nk.dark-mode {
-    color: #c5cdc7;
-    
-}
-.li.top.dark-mode{
-    color: black;
-}
-.wrap.top.dark-mode{
-    box-shadow: #c5cdc7;
-    background:linear-gradient(#4f4f4f,#383b39,#4f4f4f);
-    
-}
-
-.button.dark-mode {
-    background-color: #4f4f4f; /* Dark button */
-    color: #f0f4f1; /* Light text on buttons */
-}
 
     
 @media (max-width:480px){
