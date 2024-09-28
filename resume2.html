@@ -116,10 +116,16 @@ border-radius: 20px;
 
 
 }
+.dark-mode footer{
+    color: white;
+}
 footer{
     color: #383b39;
 }
-
+.top > h3{
+    position: relative;
+    right: 80px;
+}
 
 .ul, .li:hover{
     color: #565d56;
@@ -140,13 +146,13 @@ footer{
 }    
 
 .ul{
-   margin-left: 800px ;
+   margin-left: 400px ;
     
 }
 a{
-    color:  #383b39;
+    color: #f0f4f1;
     text-decoration: none;
-    color: white;
+    
 
 }
 a:hover{
@@ -154,7 +160,7 @@ a:hover{
     color: #565d56;
 }
 #mc{
-    color: #c5cdc7;
+    color: #f0f4f1;
     position: relative;
     
 }
@@ -171,7 +177,7 @@ a:hover{
     position: fixed;
     width: 85%;
     border-radius: 50px;
-    margin-left: 100px;
+    margin-left: 80px;
     margin-top: 20px;
     
     
@@ -186,7 +192,7 @@ a:hover{
         
     }
 body.dark-mode {
-    background-color: #1a1a1a;
+    background-color: black;
 }
 .dark-mode .top{
     background-color: white;
@@ -203,12 +209,15 @@ body.dark-mode {
     color: black;
 }
 .dark-mode #mc:hover{
-    color: #565656;
+    color: #565d56;
+}
+.dark-mode .top>h3{
+    color: black;
 }
 
     @media only screen and (max-width: 600px) {
         .main {
-            flex-direction: column; 
+            flex-direction: column-reverse; 
         }
     
        .right{
@@ -224,33 +233,43 @@ body.dark-mode {
            
         }
         
-    .top{
+        
+        .top{
         width: 80vw;
         position: relative;
-        left: 30px;
-        font-size: 20px;
+        left: 20px;
+        padding-bottom: 30px;
         margin-left: 0px;
         
     
         
     }
+    #mc{
+position: relative;
+left: 260px;
+bottom: 3px;
+    }
     .top>ul{
     position: relative;
-    
-    margin-left: 0px;
+    right: 10px;
+    margin-left: -40px;
     font-size: 13px;
     }
     
     .top >h3{
         display: none;
     }
-    .container{
-        margin-top: 50px;
+    #flex{
+        left: 0px;
+        position: relative;
+        
     }
+    
+
     }</style>
 <body>
     <nav class="top">
-    
+        <h3>PORTFOLIO</h3>
 
     <ul class="ul" >
         <li class="li" ><a href="index.html">Home</a></li>
@@ -353,8 +372,6 @@ document.getElementById('mc').addEventListener('click', function() {
 });
 
 </script>
-<footer>
-    Copyrights  &copy; NithishKumar s 
-  </footer>
+
 </body>
 </html>
