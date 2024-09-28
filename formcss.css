@@ -89,12 +89,12 @@ button{
     position: fixed;
     width: 85%;
     border-radius: 50px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-top: 20px;
 }
 
 #flex{
-    margin-left: 300px;
+    margin-left: 200px;
 gap:20px 
 }
 h3,p,li,ul{
