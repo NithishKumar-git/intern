@@ -50,7 +50,7 @@ label{
     width: 80%;
     border-radius: 50px;
     background-color: #c5cdc7;
-    margin-left: 300px;
+    margin-left: 150px;
 }
 #contactForm{
     display: flex;
@@ -94,7 +94,7 @@ button{
 }
 
 #flex{
-    margin-left: 240px;
+    margin-left: 300px;
 gap:20px 
 }
 h3,p,li,ul{
@@ -222,6 +222,7 @@ input, textarea {
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    margin-left: 0px;
     transition: background-color 0.3s;
 }
 
@@ -250,7 +251,7 @@ margin-left: 700px;
     #flex{
         width: 80vw;
         position: relative;
-        left: 15px;
+        left: 25px;
         padding-bottom: 20px;
         margin-left: 0px;
         }
@@ -283,8 +284,15 @@ font-size: 13px;
         
     }
 
-}
+
         
+
+    
+    .top >h3{
+        display: none;
+    }
+    
+
     h1{
         font-size: 1.5rem;
         text-align: center;
@@ -303,6 +311,7 @@ font-size: 13px;
         margin-top: 100px;
         align-items: center;
         justify-content: center;
+        
     }
     .right {
         width: 90%; /* Make right section more flexible */
@@ -318,9 +327,10 @@ font-size: 13px;
     }
     .main{
         position: relative;
-        right: 150px;
+        margin-left: 15px;
+        
     }
     footer{
         display: none;
     }
-
+}
